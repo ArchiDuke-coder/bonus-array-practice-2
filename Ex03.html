@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    const number = [0,1,2,3,4,5,6,7,8,9];
+    let str = prompt('Nhập 1 chuỗi bất kỳ : ');
+    console.log(str);
+    let count = 0;
+    for (let i = 0; i < str.length; i++){
+        for (let j = 0; j < number.length; j++){
+            if (str[i] == number[j] && str[i] != ' '){
+                count++;
+            }
+        }
+    }
+    document.write('Mảng đã nhập là '+ str+ ' có '+ str.length+' phần tử, trong đó gồm '+count+' ký tự số');
+</script>

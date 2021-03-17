@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let str = prompt('Nhập 1 chuỗi bất kỳ: ');
+    document.write('"'+str+'"'+'<br/>');
+    let list = [];
+    for (let i = 0; i < str.length; i++){
+        if (str[i] == '-'){
+            list.push('_');
+        } else {
+            list.push(str[i]);
+        }
+    }
+    document.write('"'+list.join('')+'"');
+</script>

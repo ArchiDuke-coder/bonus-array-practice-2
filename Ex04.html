@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let str = prompt('Nhập chuỗi bất kỳ: ');
+    let count = 1;
+    let i =0;
+    if (str[0] == ' '){
+        count = 0;
+    }
+    while (i < str.length){
+        if (str[i] == ' '){
+            i++;
+            continue;
+        }
+        if (str[i] != ' ' && str[i-1] == ' '){
+            count++;
+        }
+        i++;
+    }
+    document.write('Chuỗi ' +'"'+ str+ '"'+' có '+ count+' từ' );
+</script>
